@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('App bar'),
+        title: Text('Home Page'),
         backgroundColor: Colors.red,
         actions: [
           IconButton(
@@ -17,7 +17,15 @@ class HomePage extends StatelessWidget {
         ],
       ),
       drawer: Drawer(),
-      body: Center(child: Text('Home Page')),
+      body: Center(
+        child: Container(
+          color: Colors.red,
+          width: 200,
+          height: 200,
+          margin: EdgeInsets.all(10),
+          padding: EdgeInsets.all(10),
+        ),
+      ),
     );
   }
 }
