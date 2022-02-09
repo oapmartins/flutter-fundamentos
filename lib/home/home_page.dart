@@ -19,11 +19,26 @@ class HomePage extends StatelessWidget {
       drawer: Drawer(),
       body: Center(
         child: Container(
-          color: Colors.red,
           width: 200,
           height: 200,
           margin: EdgeInsets.all(10),
           padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: Colors.red,
+            borderRadius: BorderRadius.circular(30),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black,
+                blurRadius: 20,
+                offset: Offset(10, 10),
+              ),
+              BoxShadow(
+                color: Colors.green,
+                blurRadius: 20,
+                offset: Offset(-10, -10),
+              ),
+            ],
+          ),
         ),
       ),
     );
