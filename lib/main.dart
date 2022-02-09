@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fundamentos/home/home_page.dart';
+import 'package:flutter_fundamentos/images/images.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: HomePage(),
+      home: ImagesPage(),
     );
   }
 }
