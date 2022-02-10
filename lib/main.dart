@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fundamentos/navegacao/home_page.dart' as navegacao;
 import 'package:flutter_fundamentos/home/home_page.dart';
 import 'package:flutter_fundamentos/images/images.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: HomePage(),
+      home: navegacao.HomePage(),
     );
   }
 }
