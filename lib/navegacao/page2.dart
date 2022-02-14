@@ -3,6 +3,7 @@ import 'package:flutter_fundamentos/navegacao/page3.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
+  static final String routName = '/page2';
 
   @override
   Widget build(BuildContext context) {
@@ -19,15 +20,23 @@ class Page2 extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => Page3(),
                     settings: RouteSettings(name: 'page3'),
+                    builder: (context) => Page3(),
                   ),
                 );
               },
             ),
             ElevatedButton(
               child: Text('Page3 via NAMED'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(Page3.routName);
+              },
+            ),
+            ElevatedButton(
+              child: Text('POP'),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
             ),
           ],
         ),

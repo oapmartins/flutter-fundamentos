@@ -27,7 +27,9 @@ class HomePage extends StatelessWidget {
             ),
             ElevatedButton(
               child: Text('Page2 via NAMED'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed(Page2.routName);
+              },
             ),
           ],
         ),
