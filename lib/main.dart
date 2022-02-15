@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fundamentos/navegacao/home_page.dart' as navegacao;
 import 'package:flutter_fundamentos/navegacao/page1.dart';
+import 'package:flutter_fundamentos/navegacao_params/lista.dart';
 
 import 'navegacao/page2.dart';
 import 'navegacao/page3.dart';
@@ -17,12 +18,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       // home: navegacao.HomePage(),
+      initialRoute: '/navegacao_param',
       routes: {
-        '/' : (_) => navegacao.HomePage(),
+        '/': (_) => navegacao.HomePage(),
         Page1.routName: (_) => Page1(),
         Page2.routName: (_) => Page2(),
         Page3.routName: (_) => Page3(),
         Page4.routName: (_) => Page4(),
+        '/navegacao_param': (_) => Lista(),
       },
     );
   }
