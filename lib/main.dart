@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_fundamentos/navegacao/home_page.dart' as navegacao;
 import 'package:flutter_fundamentos/navegacao/page1.dart';
+import 'package:flutter_fundamentos/navegacao_params/detalhe.dart';
 import 'package:flutter_fundamentos/navegacao_params/lista.dart';
 
 import 'navegacao/page2.dart';
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         Page3.routName: (_) => Page3(),
         Page4.routName: (_) => Page4(),
         '/navegacao_param': (_) => Lista(),
+        '/detalhe': (_) => Detalhe(),
       },
     );
   }

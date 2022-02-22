@@ -17,7 +17,9 @@ class _DetalheState extends State<Detalhe> {
     WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
       final param =
           ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>?;
-      id = param?['id'] ?? 0;
+      setState(() {
+        id = param?['id'] ?? 0;
+      });
     });
   }
 

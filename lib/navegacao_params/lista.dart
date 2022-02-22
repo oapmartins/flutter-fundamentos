@@ -14,16 +14,11 @@ class Lista extends StatelessWidget {
       body: Column(children: [
         TextButton(
           onPressed: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(
-                settings: RouteSettings(
-                  name: 'detalhe',
-                  arguments: {
-                    'id': 10,
-                  },
-                ),
-                builder: (context) => Detalhe(),
-              ),
+            Navigator.of(context).pushNamed(
+              '/detalhe',
+              arguments: {
+                'id': 10,
+              },
             );
           },
           child: Text('Detalhes'),
