@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fundamentos/navegacao/page1.dart';
+import 'page1.dart';
 
 class Page4 extends StatelessWidget {
-
-  const Page4({ Key? key }) : super(key: key);
+  const Page4({Key? key}) : super(key: key);
   static final String routName = '/page4';
 
-   @override
-   Widget build(BuildContext context) {
-       return Scaffold(
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: const Text('Página 4'),
       ),

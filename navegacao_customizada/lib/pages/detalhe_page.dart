@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+
+class DetalhePage extends StatelessWidget {
+  final String parametro;
+  const DetalhePage({Key? key, required this.parametro}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Detalhes')),
+      body: Center(
+        child: Text(parametro),
+      ),
+    );
+  }
+}

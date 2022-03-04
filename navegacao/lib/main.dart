@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fundamentos/navegacao/home_page.dart' as navegacao;
-import 'package:flutter_fundamentos/navegacao/page1.dart';
-import 'package:flutter_fundamentos/navegacao_params/detalhe.dart';
-import 'package:flutter_fundamentos/navegacao_params/lista.dart';
+import 'navegacao/home_page.dart' as navegacao;
+import 'navegacao/page1.dart';
+import 'navegacao_params/detalhe.dart';
+import 'navegacao_params/lista.dart';
 
 import 'navegacao/page2.dart';
 import 'navegacao/page3.dart';
