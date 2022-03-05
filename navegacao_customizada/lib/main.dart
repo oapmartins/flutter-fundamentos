@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navegacao_customizada/pages/detalhe2_page.dart';
 import 'package:navegacao_customizada/pages/detalhe_page.dart';
 import 'package:navegacao_customizada/pages/home_page.dart';
 
@@ -37,6 +38,10 @@ class MyApp extends StatelessWidget {
             ),
           );
         }
+      },
+      routes: {
+        '/': (_) => HomePage(),
+        '/detalhe2': (_) => Detalhe2Page(),
       },
     );
   }

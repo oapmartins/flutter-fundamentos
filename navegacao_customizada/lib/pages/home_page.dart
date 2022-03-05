@@ -37,6 +37,17 @@ class HomePage extends StatelessWidget {
                 );
               },
             ),
+            TextButton(
+              child: const Text('Ir para Detalhe 2 e aguardar'),
+              onPressed: () async {
+                print('Antes de navegar para a página 2');
+
+                final retorno =
+                    await Navigator.of(context).pushNamed('/detalhe2');
+                print(retorno);
+                print('Navegou para a página 2');
+              },
+            ),
           ],
         ),
       ),
