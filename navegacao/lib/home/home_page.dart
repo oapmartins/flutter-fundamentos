@@ -23,7 +23,13 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text('Teste', style: TextStyle(fontFamily: 'Tourney', fontWeight: FontWeight.bold, fontSize: 50)),
+            Text(
+              'Teste',
+              style: TextStyle(
+                  fontFamily: 'Tourney',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 50),
+            ),
             Container(
               width: 200,
               height: 200,
