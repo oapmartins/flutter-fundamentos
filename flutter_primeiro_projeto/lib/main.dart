@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_primeiro_projeto/pages/home/home_page.dart';
+import 'package:flutter_primeiro_projeto/pages/media_query/media_query_page.dart';
 import 'package:flutter_primeiro_projeto/pages/rows_columns/rowns_columns_page.dart';
 import 'pages/container/container_page.dart';
 
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         '/': (_) => const HomePage(),
         '/container': (_) => const ContainerPage(),
         '/rows_columns': (_) => const RownsColumnsPage(),
+        '/media_query': (_) => const MediaQueryPage(),
       },
     );
   }
