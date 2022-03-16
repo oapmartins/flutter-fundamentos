@@ -19,7 +19,7 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
                   quarterTurns: 1,
                   child: Container(
                     padding: const EdgeInsets.all(10),
-                    child: const Text('Octávio Augusto'),
+                    child: const Text('Octávio Augusto '),
                     color: Colors.red,
                   ),
                 ),
