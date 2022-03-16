@@ -14,25 +14,38 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
-              children: const [
+              children: [
                 RotatedBox(
                   quarterTurns: 1,
-                  child: Text('Octávio Augusto'),
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    child: const Text('Octávio Augusto'),
+                    color: Colors.red,
+                  ),
                 ),
               ],
             ),
             TextButton(
               onPressed: () {},
-              child: Text('Salvar'),
+              child: const Text('Salvar'),
               style: TextButton.styleFrom(
-                  primary: Colors.red,
-                  padding: EdgeInsets.all(50),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(30),
-                    ),
-                  )),
-            )
+                minimumSize: const Size(50, 10),
+                primary: Colors.red,
+                padding: const EdgeInsets.all(10),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
+              ),
+            ),
+            IconButton(onPressed: () {}, icon: Icon(Icons.exit_to_app)),
+            ElevatedButton(onPressed: () {}, child: Icon(Icons.abc_outlined)),
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: Icon(Icons.airline_seat_flat),
+              label: Text('tests'),
+            ),
           ],
         ),
       ),
