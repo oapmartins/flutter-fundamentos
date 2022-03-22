@@ -66,7 +66,7 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.airline_seat_flat),
-              label: const Text('tests'),
+              label: const Text('teste'),
               style: ButtonStyle(
                 shadowColor: MaterialStateProperty.all(Colors.red),
                 minimumSize: MaterialStateProperty.resolveWith((states) {
