@@ -39,12 +39,51 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
                 ),
               ),
             ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.exit_to_app)),
-            ElevatedButton(onPressed: () {}, child: Icon(Icons.abc_outlined)),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.exit_to_app),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Icon(Icons.abc_outlined),
+            ),
             ElevatedButton.icon(
               onPressed: () {},
-              icon: Icon(Icons.airline_seat_flat),
-              label: Text('tests'),
+              icon: const Icon(Icons.airline_seat_flat),
+              label: const Text('tests'),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.purple,
+                shadowColor: Colors.orange,
+                minimumSize: const Size(120, 50),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(30),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: const Icon(Icons.airline_seat_flat),
+              label: const Text('tests'),
+              style: ButtonStyle(
+                shadowColor: MaterialStateProperty.all(Colors.red),
+                minimumSize: MaterialStateProperty.resolveWith((states) {
+                  if (states.contains(MaterialState.pressed)) {
+                    return const Size(100, 100);
+                  } else if (states.contains(MaterialState.hovered)) {
+                    return const Size(200, 200);
+                  }
+                }),
+                backgroundColor: MaterialStateProperty.resolveWith((states) {
+                  if (states.contains(MaterialState.pressed)) {
+                    return Colors.red;
+                  } else if (states.contains(MaterialState.hovered)) {
+                    return Colors.green;
+                  }
+                }),
+              ),
             ),
           ],
         ),
